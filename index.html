@@ -59,7 +59,7 @@
     section { position: relative; z-index: 1; }
 
     /* Hero */
-    .hero { padding: 120px 0 80px; text-align: center; }
+    .hero { padding: 180px 0 80px; text-align: center; }
 
     .avatar {
       display: block;
@@ -243,6 +243,32 @@
     .final-cta h2 { margin-bottom: 14px; }
     .final-cta p { color: var(--muted); font-size: 18px; max-width: 480px; margin: 0 auto 32px; position: relative; }
 
+    /* Sticky nav */
+    .top-nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 24px;
+      background: rgba(11,12,16,0.8);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(38,42,53,0.6);
+    }
+    .nav-name {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+    }
+    .nav-role {
+      color: var(--muted);
+      font-weight: 400;
+    }
+    .nav-ctas { display: flex; gap: 10px; align-items: center; }
+    .top-nav .btn { font-size: 14px; padding: 10px 20px; }
+
     footer {
       text-align: center;
       color: var(--muted);
@@ -261,6 +287,14 @@
   </style>
 </head>
 <body>
+  <nav class="top-nav">
+    <span class="nav-name">Valery Mezencev <span class="nav-role">· Product Marketing &amp; GTM · B2B SaaS PLG → Product-led Sales</span></span>
+    <div class="nav-ctas">
+      <a class="btn btn-ghost" href="#about">About me</a>
+      <a class="btn btn-primary" href="https://www.linkedin.com/in/valery-mezencev/" target="_blank" rel="noopener">Connect on LinkedIn →</a>
+    </div>
+  </nav>
+
   <div class="glow"></div>
 
   <!-- HERO -->
@@ -278,7 +312,7 @@
         <a class="btn btn-primary" href="https://www.linkedin.com/in/valery-mezencev/" target="_blank" rel="noopener">
           Connect on LinkedIn →
         </a>
-        <a class="btn btn-ghost" href="#about">Learn more</a>
+        <a class="btn btn-ghost" href="#about">About me</a>
       </div>
     </div>
   </section>
